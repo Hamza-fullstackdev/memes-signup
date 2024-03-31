@@ -135,7 +135,7 @@
     videoElement.width = 200;
     videoElement.height = 200;
     videoElement.autoplay = true;
-
+    videoElement.loading = "lazy";
     window.onload = () => {
       videoElement.src = "video9.mp4";
       videoElement.play();
