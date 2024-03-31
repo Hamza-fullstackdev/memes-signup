@@ -135,12 +135,12 @@
     videoElement.width = 200;
     videoElement.height = 200;
     videoElement.autoplay = true;
-    videoElement.loading = "lazy";
-    window.onload = () => {
+   
+    window.addEventListener("load",()=>{
       videoElement.src = "video9.mp4";
       videoElement.play();
       showMeme.appendChild(videoElement);
-    };
+    });
     function checkName(e) {
       if (!e.target.value.match(/^[a-zA-Z\s]+$/)) {
         error.textContent =
